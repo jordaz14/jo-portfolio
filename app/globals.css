@@ -10,5 +10,6 @@
 
 
 body {
-  background-color: var(--theme-snow)
+  background-color: var(--theme-snow);
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
