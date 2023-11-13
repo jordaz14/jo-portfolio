@@ -10,7 +10,7 @@ export default function ContactPage() {
       <PageWrap>
         <PageTitle>contact</PageTitle>
       </PageWrap>
-      <Footer />
+      <Footer className={""}/>
     </>
   );
 }

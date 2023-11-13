@@ -2,7 +2,7 @@ import React from "react";
 
 import TitleText from "./TitleText";
 
-export default function PageTitle({ children }) {
+export default function PageTitle({ children }: any) {
   return (
     <>
       <div className="flex -mt-6">

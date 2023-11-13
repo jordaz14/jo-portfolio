@@ -14,7 +14,7 @@ export default function AboutPage() {
         <TitleText>self-taught developer</TitleText>
         </div>
       </PageWrap>
-      <PageFooter/>
+      <PageFooter className={""}/>
     </>
   );
 }
