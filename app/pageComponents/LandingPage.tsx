@@ -10,12 +10,12 @@ export default function LandingPage() {
   return (
     <>
       <PageWrap>
-        <div className="absolute top-1/4 md:top-1/3 left-1/2 -translate-x-1/2">
+        <div className="absolute top-[18%] md:top-1/3 left-1/2 -translate-x-1/2">
           <div>
             <TitleText className={"text-black text-center"}>
               Julian Ordaz
             </TitleText>
-            <div className="bg-black h-[2px] w-[400%] absolute top-[30%] md:top-[40%] -left-[150%]"></div>
+            <div className="bg-black h-[2px] w-[400%] absolute top-[25%] md:top-[40%] -left-[150%]"></div>
           </div>
           <div className="flex flex-col md:flex-row justify-around items-center">
             <a href="#item2">

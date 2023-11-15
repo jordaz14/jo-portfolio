@@ -13,6 +13,7 @@ export default function AboutPage() {
       <PageWrap>
         <PageTitle>about</PageTitle>
         <div className="absolute my-auto [top:26%]">
+          {/* Desktop View */}
           <div className="hidden md:block">
             <TypeAnimation
               preRenderFirstString={true}
@@ -33,6 +34,7 @@ export default function AboutPage() {
               repeat={Infinity}
             />
           </div>
+          {/* Mobile View */}
           <div className="block md:hidden">
             <TypeAnimation
               preRenderFirstString={true}
