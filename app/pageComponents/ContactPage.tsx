@@ -13,9 +13,9 @@ export default function ContactPage() {
     <>
       <PageWrap>
         <PageTitle>contact</PageTitle>
-        <div className="absolute my-auto top-[20%] md:top-[22%]">
+        <div className="mt-5 md:mt-20">
           <TitleText>
-            by my window in <br /> harlem, nyc <br /> wondering...
+            by my window, <br /> harlem, nyc, <br /> wondering...
           </TitleText>
         </div>
       </PageWrap>
