@@ -9,7 +9,7 @@ import LoadingPage from "./pageComponents/LoadingPage";
 export default function Home() {
   return (
     <>
-      <main className="h-[100svh] w-screen carousel carousel-vertical overflow-x-hidden">
+      <main className="h-[100svh] w-screen carousel carousel-vertical overflow-x-hidden" onLoad={()=>window.location.reload}>
         <LoadingPage />
         <section id="item1" className="carousel-item h-full w-full relative">
           <LandingPage />
