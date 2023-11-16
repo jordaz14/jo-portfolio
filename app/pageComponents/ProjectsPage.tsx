@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -9,6 +9,31 @@ import TitleText from "../components/TitleText";
 import BodyText from "../components/BodyText";
 
 export default function ProjectsPage() {
+  const projectObject = {
+    mahjong: {
+      name: "mahjong social",
+      desc: "a booking app",
+      image: "/mahjong.png",
+      github: "https://github.com/jordaz14/Ecom_Mahjong",
+    },
+    corner: {
+      name: "corner hair salon",
+      desc: "an ecom app",
+      image: "/scissor.png",
+      github: "https://github.com/jordaz14/BookingApp_Salon",
+    },
+  };
+
+  const [project, setProject] = useState(projectObject.mahjong);
+
+  const toggleProject = () => {
+    if (project.name == projectObject.mahjong.name) {
+      setProject(projectObject.corner);
+    } else {
+      setProject(projectObject.mahjong);
+    }
+  };
+
   return (
     <>
       <PageWrap>
@@ -17,36 +42,44 @@ export default function ProjectsPage() {
           <div className="w-screen flex justify-around items-center relative">
             <TitleText
               className={
-                "hidden xl:block absolute left-[15%] -translate-x-1/4 text-center"
+                "hidden 2xl:block absolute left-[12%] top-3 -translate-x-1/4 text-center"
               }
             >
-              mahjong <br></br>social
+              {project.name}
             </TitleText>
             <motion.div
               className="bg-[--theme-snow] rounded-full h-[250px] w-[250px] md:h-[300px] md:w-[300px] flex justify-center items-center"
               whileHover={{ scale: 1.1 }}
             >
               <Image
-                src={"/mahjong.png"}
+                src={project.image}
                 width={150}
                 height={150}
-                alt="Mahjong Icon"
+                alt={`${project.name} logo`}
+                onDragStart={(event) => event.preventDefault()}
               ></Image>
             </motion.div>
+            <TitleText
+              className={
+                "hidden 2xl:block absolute right-[15%] bottom-3 translate-x-1/4 text-center"
+              }
+            >
+              {project.desc}
+            </TitleText>
             <div className="bg-[--theme-snow] h-[2px] w-[500%] absolute top-[50%] -left-[200%] -z-50"></div>
           </div>
           {/*Desktop View */}
-          <div className="hidden md:block h-[50px] w-[2px] bg-[--theme-snow] mx-auto"></div>
+          <div className="hidden md:block h-[30px] w-[2px] bg-[--theme-snow] mx-auto"></div>
           {/*Mobile View */}
-          <div className="xl:hidden">
-            <div className="h-[50px] w-[2px] bg-[--theme-snow] mx-auto"></div>
-            <BodyText>mahjong social </BodyText>
-            <div className="h-[50px] w-[2px] bg-[--theme-snow] mx-auto mt-3"></div>
+          <div className="2xl:hidden">
+            <div className="h-[10px] w-[2px] bg-[--theme-snow] mx-auto"></div>
+            <BodyText>{project.name} </BodyText>
+            <div className="h-[10px] w-[2px] bg-[--theme-snow] mx-auto mt-3"></div>
           </div>
           <div className=" w-[300px] flex justify-around items-center">
-            <Icon img="left" />
+            <Icon img="left" onClick={toggleProject} />
             <Icon img="github" />
-            <Icon img="right" />
+            <Icon img="right" onClick={toggleProject} />
           </div>
         </div>
       </PageWrap>

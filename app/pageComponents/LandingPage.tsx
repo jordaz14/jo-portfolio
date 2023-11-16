@@ -39,7 +39,7 @@ export default function LandingPage() {
           </div>
         </div>
       </PageWrap>
-      <div className="flex flex-col justify-center items-center absolute -bottom-2 left-1/2 -translate-x-1/2">
+      <div className="flex flex-col justify-center items-center absolute -bottom-2 left-1/2 -translate-x-1/2" onDragStart={(event)=> event.preventDefault()}>
         <Image src="/star.png" width={50} height={50} alt="Star Icon" />
         <Image
           src="/mountain.svg"

@@ -14,7 +14,7 @@ export default function AboutPage() {
         <PageTitle>about</PageTitle>
         <div className="absolute my-auto top-[15%] md:top-[26%]">
           {/* Desktop View */}
-          <div className="hidden md:block">
+          <div className="hidden md:block select-none">
             <TypeAnimation
               preRenderFirstString={true}
               sequence={[

@@ -18,24 +18,19 @@ export default function ContactPage() {
             by my window in <br /> harlem, nyc <br /> wondering...
           </TitleText>
         </div>
-      
       </PageWrap>
       {/* Icon Footer */}
-      <div className="w-[350px] absolute bottom-1 left-1/2 -translate-x-1/2 md:left-[85%] flex justify-around">
-        <a href="mailto:1julianordaz@gmail.com" >
+      <div className="w-[350px] absolute bottom-3 left-1/2 -translate-x-1/2 md:left-[85%] flex justify-around">
+        <a href="mailto:1julianordaz@gmail.com">
           <Icon img="email" />
-          <div className="h-3 w-[2px] bg-[--theme-snow] mx-auto"></div>
         </a>
         <a href="https://www.linkedin.com/in/julianordaz/" target="_blank">
           <Icon img="linkedin" />
-          <div className="h-3 w-[2px] bg-[--theme-snow] mx-auto"></div>
         </a>
         <a href="https://github.com/jordaz14" target="_blank">
           <Icon img="github" />
-          <div className="h-3 w-[2px] bg-[--theme-snow] mx-auto"></div>
         </a>
       </div>
-      <PageFooter className="bg-[--theme-snow]" />
     </>
   );
 }
