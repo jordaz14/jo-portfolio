@@ -19,7 +19,7 @@ export default function ContactPage() {
         </div>
       </PageWrap>
       {/* Icon Footer */}
-      <div className="w-[350px] absolute bottom-3 left-1/2 -translate-x-1/2 md:left-[85%] flex justify-around">
+      <div className="w-[350px] absolute bottom-6 -left-4 md:-translate-x-1/2 md:left-[85%] flex justify-around">
         <a href="mailto:1julianordaz@gmail.com">
           <Icon img="email" />
         </a>
