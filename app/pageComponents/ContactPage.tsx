@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 import PageWrap from "../components/PageWrap";
 import PageTitle from "../components/PageTitle";
-import PageFooter from "../components/PageFooter";
 import TitleText from "../components/TitleText";
 import Icon from "../components/Icon";
 
@@ -13,7 +12,7 @@ export default function ContactPage() {
     <>
       <PageWrap>
         <PageTitle>contact</PageTitle>
-        <div className="mt-5 md:mt-20">
+        <div className="mt-3 md:mt-6">
           <TitleText>
             by my window, <br /> harlem, nyc, <br /> wondering...
           </TitleText>

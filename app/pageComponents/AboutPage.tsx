@@ -1,59 +1,44 @@
 "use client";
 
-import React from "react";
-import { TypeAnimation } from "react-type-animation";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 import PageWrap from "../components/PageWrap";
 import PageTitle from "../components/PageTitle";
 import BodyText from "../components/BodyText";
 
 export default function AboutPage() {
+  const aboutList = ["developer", "javascript", "html / css"];
+  const [about, setAbout] = useState(aboutList[0]);
+
+  const changeAbout = () => {
+    aboutList.forEach((el, index) => {
+      if (about == aboutList[index]) {
+        setAbout(aboutList[index + 1]);
+      }
+      if (about == aboutList[aboutList.length - 1]) {
+        setAbout(aboutList[0]);
+      }
+    });
+  };
+
   return (
     <>
       <PageWrap>
         <PageTitle>about</PageTitle>
         <div className="absolute my-auto top-[15%] md:top-[26%]">
-          {/* Desktop View */}
-          <div className="hidden md:block select-none">
-            <TypeAnimation
-              preRenderFirstString={true}
-              sequence={[
-                1000,
-                "self-taught developer",
-                1000,
-                "self-taught javascript",
-                1000,
-                "self-taught html",
-                1000,
-                "self-taught css",
-                1000,
-              ]}
-              speed={40}
-              cursor={false}
-              style={{ fontSize: "120px", color: "white" }}
-              repeat={Infinity}
-            />
-          </div>
-          {/* Mobile View */}
-          <div className="block md:hidden">
-            <TypeAnimation
-              preRenderFirstString={true}
-              sequence={[
-                1000,
-                "self-taught developer",
-                1000,
-                "self-taught javascript",
-                1000,
-                "self-taught html",
-                1000,
-                "self-taught css",
-                1000,
-              ]}
-              speed={40}
-              cursor={false}
-              style={{ fontSize: "80px", color: "white" }}
-              repeat={Infinity}
-            />
+          <div className="flex flex-col md:flex-row h-fit w-fit">
+            <h1 className="text-[--theme-snow] select-none text-[65px] md:text-[100px]">
+              self-taught&nbsp;
+            </h1>
+            <motion.h1
+              className="underline text-[--theme-snow] select-none text-[65px] md:text-[100px]"
+              onClick={changeAbout}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {about}
+            </motion.h1>
           </div>
           <BodyText>
             exploring the intersection of design, technology, and purpose

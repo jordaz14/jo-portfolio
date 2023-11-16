@@ -11,7 +11,7 @@ export default function LandingPage() {
   return (
     <>
       <PageWrap>
-        <div className="flex flex-col bg-purple-100 mt-[15%]">
+        <div className="absolute top-[18%] md:top-1/3 left-1/2 -translate-x-1/2">
           <div>
             <TitleText className={"text-black text-center"}>
               Julian Ordaz
