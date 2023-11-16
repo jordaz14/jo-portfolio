@@ -11,13 +11,13 @@ export default function LandingPage() {
   return (
     <>
       <PageWrap>
-        <div className="absolute top-[18%] md:top-1/3 left-1/2 -translate-x-1/2">
-          <div>
+        <div className="w-1/2 mx-auto mt-[12%]">
+          <div className="relative ">
             <TitleText className={"text-black text-center"}>
               Julian Ordaz
             </TitleText>
             <motion.div
-              className="bg-black h-[2px] w-[500%] absolute top-[25%] md:top-[40%] -left-[200%]"
+              className="bg-black h-[2px] w-[500%] absolute top-[50%] -left-[200%]"
               animate={{ x: [-5000, 0] }}
               transition={{ delay: 5, duration: 2 }}
             />
@@ -39,7 +39,10 @@ export default function LandingPage() {
           </div>
         </div>
       </PageWrap>
-      <div className="flex flex-col justify-center items-center absolute -bottom-2 left-1/2 -translate-x-1/2" onDragStart={(event)=> event.preventDefault()}>
+      <div
+        className="flex flex-col justify-center items-center absolute -bottom-2 left-1/2 -translate-x-1/2"
+        onDragStart={(event) => event.preventDefault()}
+      >
         <Image src="/star.png" width={50} height={50} alt="Star Icon" />
         <Image
           src="/mountain.svg"

@@ -14,7 +14,7 @@ export default function ContactPage() {
         <PageTitle>contact</PageTitle>
         <div className="mt-3 md:mt-6">
           <TitleText>
-            by my window, <br /> harlem, nyc, <br /> wondering...
+            by my window, <br /> harlem, nyc, <br /> wondering
           </TitleText>
         </div>
       </PageWrap>

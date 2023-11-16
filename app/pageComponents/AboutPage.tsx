@@ -26,7 +26,7 @@ export default function AboutPage() {
     <>
       <PageWrap>
         <PageTitle>about</PageTitle>
-        <div className="absolute my-auto top-[15%] md:top-[26%]">
+        <div className="mt-2 md:mt-16">
           <div className="flex flex-col md:flex-row h-fit w-fit">
             <h1 className="text-[--theme-snow] select-none text-[65px] md:text-[100px]">
               self-taught&nbsp;
