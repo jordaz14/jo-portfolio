@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
       </Head>
       <body className={`${oranienbaum.className} overflow-hidden`}>
         {children}
