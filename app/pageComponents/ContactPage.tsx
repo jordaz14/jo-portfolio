@@ -13,7 +13,7 @@ export default function ContactPage() {
     <>
       <PageWrap>
         <PageTitle>contact</PageTitle>
-        <div className="absolute my-auto top-[18%] md:top-[22%]">
+        <div className="absolute my-auto top-[20%] md:top-[22%]">
           <TitleText>
             by my window in <br /> harlem, nyc <br /> wondering...
           </TitleText>

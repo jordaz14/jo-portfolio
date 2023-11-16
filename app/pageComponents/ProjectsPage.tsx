@@ -38,7 +38,7 @@ export default function ProjectsPage() {
     <>
       <PageWrap>
         <PageTitle>projects</PageTitle>
-        <div className=" flex flex-col items-center rounded-full absolute left-[50%] top-[55%] md:top-[60%] -translate-x-1/2 -translate-y-1/2">
+        <div className=" flex flex-col items-center rounded-full absolute left-[50%] top-[55%] md:top-[55%] -translate-x-1/2 -translate-y-1/2">
           <div className="w-screen flex justify-around items-center relative">
             <TitleText
               className={
@@ -74,11 +74,13 @@ export default function ProjectsPage() {
           <div className="2xl:hidden">
             <div className="h-[10px] w-[2px] bg-[--theme-snow] mx-auto"></div>
             <BodyText>{project.name} </BodyText>
-            <div className="h-[10px] w-[2px] bg-[--theme-snow] mx-auto mt-3"></div>
+            <div className="h-[0px] w-[2px] bg-[--theme-snow] mx-auto mt-3"></div>
           </div>
           <div className=" w-[300px] flex justify-around items-center">
             <Icon img="left" onClick={toggleProject} />
+            <a href={project.github} target="_blank">
             <Icon img="github" />
+            </a>
             <Icon img="right" onClick={toggleProject} />
           </div>
         </div>

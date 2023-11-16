@@ -10,9 +10,7 @@ export default function Home() {
   return (
     <>
       <main className="h-screen w-screen carousel carousel-vertical overflow-x-hidden">
-        {/* 
         <LoadingPage />
-        */}
         <section id="item1" className="carousel-item h-full w-full relative">
           <LandingPage />
         </section>
