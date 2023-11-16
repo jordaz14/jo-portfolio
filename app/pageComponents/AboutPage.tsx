@@ -12,7 +12,7 @@ export default function AboutPage() {
     <>
       <PageWrap>
         <PageTitle>about</PageTitle>
-        <div className="absolute my-auto [top:26%]">
+        <div className="absolute my-auto top-[15%] md:top-[26%]">
           {/* Desktop View */}
           <div className="hidden md:block">
             <TypeAnimation

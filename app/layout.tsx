@@ -19,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${oranienbaum.className} overflow-hidden`}>{children}</body>
+      <body className={`${oranienbaum.className} overflow-hidden`}>
+        {children}
+      </body>
     </html>
   );
 }

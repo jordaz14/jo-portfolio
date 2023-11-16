@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import PageWrap from "../components/PageWrap";
 import PageFooter from "../components/PageFooter";
@@ -15,22 +16,26 @@ export default function LandingPage() {
             <TitleText className={"text-black text-center"}>
               Julian Ordaz
             </TitleText>
-            <div className="bg-black h-[2px] w-[400%] absolute top-[25%] md:top-[40%] -left-[150%]"></div>
+            <motion.div
+              className="bg-black h-[2px] w-[500%] absolute top-[25%] md:top-[40%] -left-[200%]"
+              animate={{ x: [-5000, 0] }}
+              transition={{ delay: 5, duration: 2 }}
+            />
           </div>
           <div className="flex flex-col md:flex-row justify-around items-center">
-            <a href="#item2">
+            <motion.a href="#about" whileHover={{ scale: 1.1 }}>
               <BodyText className="text-black hover:underline">about</BodyText>
-            </a>
-            <a href="#item3">
+            </motion.a>
+            <motion.a href="#projects" whileHover={{ scale: 1.1 }}>
               <BodyText className="text-black hover:underline">
                 projects
               </BodyText>
-            </a>
-            <a href="#item4">
+            </motion.a>
+            <motion.a href="#contact" whileHover={{ scale: 1.1 }}>
               <BodyText className="text-black hover:underline">
                 contact
               </BodyText>
-            </a>
+            </motion.a>
           </div>
         </div>
       </PageWrap>
