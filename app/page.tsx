@@ -1,5 +1,4 @@
 "use client";
-import { redirect } from "next/navigation";
 
 import LandingPage from "./pageComponents/LandingPage";
 import ContactPage from "./pageComponents/ContactPage";

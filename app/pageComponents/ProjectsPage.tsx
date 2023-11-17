@@ -38,7 +38,7 @@ export default function ProjectsPage() {
     <>
       <PageWrap>
         <PageTitle>projects</PageTitle>
-        <div className="flex flex-col items-center justify-center rounded-full mx-auto mt-3 2xl:mt-[8%]">
+        <div className="flex flex-col items-center justify-center rounded-full mx-auto mt-10 md:mt-1 2xl:mt-[8%]">
           <div className="w-screen flex justify-around items-center relative">
             <TitleText
               className={
