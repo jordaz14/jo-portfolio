@@ -1,4 +1,5 @@
 "use client";
+import { redirect } from "next/navigation";
 
 import LandingPage from "./pageComponents/LandingPage";
 import ContactPage from "./pageComponents/ContactPage";
@@ -9,9 +10,14 @@ import LoadingPage from "./pageComponents/LoadingPage";
 export default function Home() {
   return (
     <>
-      <main className="h-[100svh] w-screen carousel carousel-vertical overflow-x-hidden" onLoad={()=>window.location.reload}>
+      <main
+        className="h-[100svh] w-screen carousel carousel-vertical overflow-x-hidden"
+        onLoad={() => {
+          history.replaceState({}, document.title, ".");;
+        }}
+      >
         <LoadingPage />
-        <section id="item1" className="carousel-item h-full w-full relative">
+        <section id="landing" className="carousel-item h-full w-full relative">
           <LandingPage />
         </section>
         <section
