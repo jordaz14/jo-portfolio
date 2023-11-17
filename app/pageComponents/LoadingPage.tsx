@@ -39,7 +39,7 @@ export default function LoadingPage() {
             alt="Mountain Icon"
             onDragStart={(event)=> event.preventDefault()}
           />
-          <p className="text-black select-none">hi, how are you</p>
+          <p className="text-black select-none">in progress</p>
         </motion.div>
       </motion.div>
     </>
