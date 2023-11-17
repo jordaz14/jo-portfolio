@@ -12,13 +12,13 @@ export default function ProjectsPage() {
   const projectObject = {
     mahjong: {
       name: "mahjong social",
-      desc: "a booking app",
+      desc: "an ecom app",
       image: "/mahjong.png",
       github: "https://github.com/jordaz14/Ecom_Mahjong",
     },
     corner: {
       name: "corner hair salon",
-      desc: "an ecom app",
+      desc: "a booking app",
       image: "/scissor.png",
       github: "https://github.com/jordaz14/BookingApp_Salon",
     },
